@@ -1,0 +1,29 @@
+PATH
+  remote: .
+  specs:
+    crontimeline (0.1.0)
+      fugit (>= 1.4.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    concurrent-ruby (1.1.7)
+    et-orbi (1.2.4)
+      tzinfo
+    fugit (1.4.0)
+      et-orbi (~> 1.1, >= 1.1.8)
+      raabro (~> 1.4)
+    raabro (1.4.0)
+    rake (13.0.1)
+    tzinfo (2.0.2)
+      concurrent-ruby (~> 1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  crontimeline!
+  rake
+
+BUNDLED WITH
+   2.1.4

@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require_relative '../lib/cron_timeline'
+
+crontab = StringIO.new(`crontab -l`)
+cronjobs = CronTimeline.parse crontab
+cronjobs.sort.each do |cronjob|
+  puts "#{cronjob.next_time} | #{cronjob.cron_time_string} | #{cronjob.cron_command}"
+end
